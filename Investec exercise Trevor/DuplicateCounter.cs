@@ -12,7 +12,7 @@ namespace Investec_exercise_Trevor
 
         {
 
-            //check for duplicates using linq
+            //check for duplicates using linq simpler
             var result = sentence.ToLower().Replace(" ", "")
                  .GroupBy(_ => _)
                  .Where(x => x.Count() > 1)
